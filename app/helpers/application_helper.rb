@@ -1,7 +1,7 @@
 module ApplicationHelper
     #returns full title on per-page basis.
     def full_title(page_title)
-       base_title ="Ruby in Rails App Using Rspec Testing  "
+       base_title ="Ruby on Rails App Using Rspec Testing  "
        if page_title.empty?
             base_title
        else

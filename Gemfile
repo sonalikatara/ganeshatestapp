@@ -6,6 +6,15 @@ ruby '2.0.0'
 gem 'rails', '4.0.1'
 gem 'bootstrap-sass','2.3.2.0'
 
+#faker to create semi-real data in the database usimg ruby (rake)
+gem 'faker', '1.1.2'
+
+# will_paginate is one of the several pagination solutions in rails
+gem 'will_paginate','3.0.4'
+
+# bootstrap-will_paginate configures will_paginate to use Bootstrap's pagination styles
+gem 'bootstrap-will_paginate', '0.0.9'
+
 #bcrypt-ruby for encrypting password
 gem 'bcrypt-ruby', '3.1.2'
 
@@ -29,7 +38,7 @@ gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '4.0.1'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
- gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails','3.0.4'

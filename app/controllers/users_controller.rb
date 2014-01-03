@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
- before_action :signed_in_user, only: [:edit, :update]
+ before_action :signed_in_user, only: [:index, :edit, :update]
  before_action :correct_user,   only: [:edit, :update]
 
   def new
@@ -35,7 +35,14 @@ class UsersController < ApplicationController
         render 'edit'
      end
    end
- 
+  def index
+     # @users = User.all  // displays all users at a time 
+    
+     # for pagination we use will_paginate that requires using paginate method
+     # here the :page parameter comes from params[:page], which is generated automatically by will_paginate
+     @users = User.paginate(page: params[:page])
+
+  end
  private
 
     def user_params

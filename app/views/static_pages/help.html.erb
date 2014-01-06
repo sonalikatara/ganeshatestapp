@@ -1,9 +1,15 @@
 <% provide(:title, 'Help') %>
 <h1>Help</h1>
 <p>
-  Get help on the Ruby on Rails Tutorial at the
-  <a href="http://railstutorial.org/help">Rails Tutorial help page</a>.
-  To get help on this sample app, see the
-  <a href="http://railstutorial.org/book">Rails Tutorial book</a>.
+ <%= link_to 'Sign Up Now !', root_path %> if you are a new user.
+<br>
+  <%= link_to 'Sign In', root_path %> if you are returning.
 </p>
+<p>
+   Users can view and edit their Profile by clicking on Account.
+<br>
+  Only users with Admin privledge can view and edit other users.   
+ 
+
+</p> 
 

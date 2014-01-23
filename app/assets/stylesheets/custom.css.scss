@@ -1,5 +1,8 @@
 @import "bootstrap";
 
+$grayLighter: #999;
+$grayLight: #eaeaea;
+
 /* universal */
 
 html {
@@ -45,6 +48,7 @@ textarea {
   color: #fff;
   text-decoration: none;
 }
+
 /* footer */
 
 footer {
@@ -75,6 +79,7 @@ footer ul li {
   float: left;
   margin-left: 10px;
 }
+
 /* miscellaneous */
 
 .debug_dump {
@@ -86,6 +91,7 @@ footer ul li {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 /* sidebar */
 
 aside {
@@ -168,9 +174,11 @@ input {
     border-top: 1px solid #e8e8e8;
   }
 }
+
 .content {
   display: block;
 }
+
 .timestamp {
   color: $grayLight;
 }
@@ -179,6 +187,7 @@ input {
   float: left;
   margin-right: 10px;
 }
+
 aside {
   textarea {
     height: 100px;

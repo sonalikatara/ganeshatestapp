@@ -15,8 +15,6 @@
           <%= render @microposts %>
        </ol>
         <%= will_paginate @microposts %>
-      <% else %>
-       <h5> Lets start Talking by writing a <%= link_to "new post", root_path %>. </h5>
       <% end %>
    </div>
 </div>

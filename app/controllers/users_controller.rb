@@ -16,6 +16,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+       # Tell the UserMailer to send welcome message
+       UserMailer.welcome_email(@user).deliver
+
        sign_in @user
        flash[:success] = "Welcome to the LETS TALK !"
        redirect_to @user
